@@ -36,7 +36,7 @@ class CollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.contentView.frame.width-60, height: 300)
+        return CGSize(width: self.contentView.frame.width-60, height: 250)
     }
     
 }
