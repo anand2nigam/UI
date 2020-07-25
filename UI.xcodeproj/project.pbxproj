@@ -13,6 +13,14 @@
 		EC33DEA624CC0104007929BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC33DEA424CC0104007929BE /* Main.storyboard */; };
 		EC33DEA824CC0106007929BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC33DEA724CC0106007929BE /* Assets.xcassets */; };
 		EC33DEAB24CC0106007929BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC33DEA924CC0106007929BE /* LaunchScreen.storyboard */; };
+		EC33DEB624CC021C007929BE /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33DEB424CC021C007929BE /* VideoCollectionViewCell.swift */; };
+		EC33DEB724CC021C007929BE /* VideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC33DEB524CC021C007929BE /* VideoCollectionViewCell.xib */; };
+		EC33DEBC24CC072F007929BE /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33DEBA24CC072F007929BE /* CommentTableViewCell.swift */; };
+		EC33DEBD24CC072F007929BE /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC33DEBB24CC072F007929BE /* CommentTableViewCell.xib */; };
+		EC33DEC024CC0A77007929BE /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33DEBE24CC0A77007929BE /* CollectionTableViewCell.swift */; };
+		EC33DEC124CC0A77007929BE /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC33DEBF24CC0A77007929BE /* CollectionTableViewCell.xib */; };
+		EC33DEC624CC1A7C007929BE /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC33DEC424CC1A7C007929BE /* HeaderTableViewCell.swift */; };
+		EC33DEC724CC1A7C007929BE /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC33DEC524CC1A7C007929BE /* HeaderTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		EC33DEA724CC0106007929BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC33DEAA24CC0106007929BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC33DEAC24CC0106007929BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC33DEB424CC021C007929BE /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC33DEB524CC021C007929BE /* VideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCollectionViewCell.xib; sourceTree = "<group>"; };
+		EC33DEBA24CC072F007929BE /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		EC33DEBB24CC072F007929BE /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		EC33DEBE24CC0A77007929BE /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		EC33DEBF24CC0A77007929BE /* CollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTableViewCell.xib; sourceTree = "<group>"; };
+		EC33DEC424CC1A7C007929BE /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		EC33DEC524CC1A7C007929BE /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,55 @@
 		EC33DE9D24CC0104007929BE /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				EC33DEB224CC01DD007929BE /* View */,
 				EC33DE9E24CC0104007929BE /* AppDelegate.swift */,
 				EC33DEA024CC0104007929BE /* SceneDelegate.swift */,
-				EC33DEA224CC0104007929BE /* ViewController.swift */,
+				EC33DEB324CC01EA007929BE /* Controller */,
 				EC33DEA424CC0104007929BE /* Main.storyboard */,
 				EC33DEA724CC0106007929BE /* Assets.xcassets */,
 				EC33DEA924CC0106007929BE /* LaunchScreen.storyboard */,
 				EC33DEAC24CC0106007929BE /* Info.plist */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		EC33DEB224CC01DD007929BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC33DEC324CC19DB007929BE /* CollectionViewCell */,
+				EC33DEC224CC19CC007929BE /* TableViewCells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC33DEB324CC01EA007929BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC33DEA224CC0104007929BE /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC33DEC224CC19CC007929BE /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				EC33DEBA24CC072F007929BE /* CommentTableViewCell.swift */,
+				EC33DEBB24CC072F007929BE /* CommentTableViewCell.xib */,
+				EC33DEBE24CC0A77007929BE /* CollectionTableViewCell.swift */,
+				EC33DEBF24CC0A77007929BE /* CollectionTableViewCell.xib */,
+				EC33DEC424CC1A7C007929BE /* HeaderTableViewCell.swift */,
+				EC33DEC524CC1A7C007929BE /* HeaderTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		EC33DEC324CC19DB007929BE /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EC33DEB424CC021C007929BE /* VideoCollectionViewCell.swift */,
+				EC33DEB524CC021C007929BE /* VideoCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +182,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC33DEAB24CC0106007929BE /* LaunchScreen.storyboard in Resources */,
+				EC33DEC724CC1A7C007929BE /* HeaderTableViewCell.xib in Resources */,
+				EC33DEC124CC0A77007929BE /* CollectionTableViewCell.xib in Resources */,
 				EC33DEA824CC0106007929BE /* Assets.xcassets in Resources */,
+				EC33DEB724CC021C007929BE /* VideoCollectionViewCell.xib in Resources */,
 				EC33DEA624CC0104007929BE /* Main.storyboard in Resources */,
+				EC33DEBD24CC072F007929BE /* CommentTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +199,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC33DEA324CC0104007929BE /* ViewController.swift in Sources */,
+				EC33DEC024CC0A77007929BE /* CollectionTableViewCell.swift in Sources */,
 				EC33DE9F24CC0104007929BE /* AppDelegate.swift in Sources */,
+				EC33DEC624CC1A7C007929BE /* HeaderTableViewCell.swift in Sources */,
+				EC33DEBC24CC072F007929BE /* CommentTableViewCell.swift in Sources */,
+				EC33DEB624CC021C007929BE /* VideoCollectionViewCell.swift in Sources */,
 				EC33DEA124CC0104007929BE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

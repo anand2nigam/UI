@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="VideoCollectionViewCell" customModule="UI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kYL-M6-CVO">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garden" translatesAutoresizingMaskIntoConstraints="NO" id="za5-4S-Kff">
+                                <rect key="frame" x="10" y="5" width="380" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Ibw-6f-n5n"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Bluebuild China 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kY-vc-sVQ">
+                                <rect key="frame" x="10" y="225" width="390" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Week Ago   · 2,838Play" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqF-WG-AsJ">
+                                <rect key="frame" x="10" y="248.5" width="390" height="26.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5kY-vc-sVQ" firstAttribute="top" secondItem="za5-4S-Kff" secondAttribute="bottom" constant="20" id="1Gn-lx-zvZ"/>
+                            <constraint firstItem="za5-4S-Kff" firstAttribute="top" secondItem="kYL-M6-CVO" secondAttribute="top" constant="5" id="5El-mg-gYh"/>
+                            <constraint firstItem="5kY-vc-sVQ" firstAttribute="trailing" secondItem="za5-4S-Kff" secondAttribute="trailing" constant="10" id="73U-Td-KGu"/>
+                            <constraint firstItem="uqF-WG-AsJ" firstAttribute="leading" secondItem="5kY-vc-sVQ" secondAttribute="leading" id="Fs6-Zp-SIe"/>
+                            <constraint firstItem="uqF-WG-AsJ" firstAttribute="top" secondItem="5kY-vc-sVQ" secondAttribute="bottom" id="IGW-T4-2t8"/>
+                            <constraint firstItem="5kY-vc-sVQ" firstAttribute="leading" secondItem="za5-4S-Kff" secondAttribute="leading" id="Nie-Bx-v06"/>
+                            <constraint firstItem="uqF-WG-AsJ" firstAttribute="trailing" secondItem="5kY-vc-sVQ" secondAttribute="trailing" id="PJA-Fq-G4i"/>
+                            <constraint firstItem="za5-4S-Kff" firstAttribute="leading" secondItem="kYL-M6-CVO" secondAttribute="leading" constant="10" id="efc-od-Ffj"/>
+                            <constraint firstAttribute="trailing" secondItem="za5-4S-Kff" secondAttribute="trailing" constant="10" id="ks5-8h-9Tb"/>
+                            <constraint firstAttribute="bottom" secondItem="uqF-WG-AsJ" secondAttribute="bottom" constant="25" id="mph-yl-HVa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="kYL-M6-CVO" secondAttribute="trailing" id="HrL-IK-6cS"/>
+                <constraint firstAttribute="top" secondItem="kYL-M6-CVO" secondAttribute="top" id="Jro-A4-C7R"/>
+                <constraint firstItem="kYL-M6-CVO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LFZ-NX-urh"/>
+                <constraint firstItem="kYL-M6-CVO" firstAttribute="bottom" secondItem="gTV-IL-0wX" secondAttribute="bottom" id="X3s-2D-hy8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="imageView" destination="za5-4S-Kff" id="pr7-yF-g15"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="141.29464285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="garden" width="1600" height="1054"/>
+    </resources>
+</document>
