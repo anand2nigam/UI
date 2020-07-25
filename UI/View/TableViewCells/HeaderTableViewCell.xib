@@ -22,16 +22,27 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yl-Cr-Ykb">
+                        <rect key="frame" x="276.5" y="20" width="23.5" height="14"/>
+                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="13"/>
+                        <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="xvu-c3-HkB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="FxY-xc-X66"/>
+                    <constraint firstItem="9Yl-Cr-Ykb" firstAttribute="top" secondItem="xvu-c3-HkB" secondAttribute="top" id="LG7-Fx-hyu"/>
+                    <constraint firstItem="9Yl-Cr-Ykb" firstAttribute="bottom" secondItem="xvu-c3-HkB" secondAttribute="bottom" id="Re2-H8-ddy"/>
+                    <constraint firstAttribute="trailing" secondItem="9Yl-Cr-Ykb" secondAttribute="trailing" constant="20" id="SNL-Gh-Ug9"/>
                     <constraint firstItem="xvu-c3-HkB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="X9q-ST-Keq"/>
+                    <constraint firstItem="9Yl-Cr-Ykb" firstAttribute="centerY" secondItem="xvu-c3-HkB" secondAttribute="centerY" id="c8N-8G-tFO"/>
                     <constraint firstItem="xvu-c3-HkB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="sBO-U9-CZF"/>
                     <constraint firstAttribute="bottom" secondItem="xvu-c3-HkB" secondAttribute="bottom" constant="10" id="y88-sY-lzP"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="editLabel" destination="9Yl-Cr-Ykb" id="2GY-Q2-f7o"/>
                 <outlet property="headerText" destination="xvu-c3-HkB" id="EQ9-1g-Smj"/>
             </connections>
             <point key="canvasLocation" x="139" y="142"/>

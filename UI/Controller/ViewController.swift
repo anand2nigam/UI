@@ -82,14 +82,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             let headerCell = tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell") as! HeaderTableViewCell
-            headerCell.configureCell(withText: "Video")
+            headerCell.configureCell(withText: "Video", showEdit: false)
             return headerCell
         } else if indexPath.row == 1 {
             let collectionCell = tableView.dequeueReusableCell(withIdentifier: "CollectionTableViewCell") as! CollectionTableViewCell
             return collectionCell
         } else if indexPath.row == 2 {
             let headerCell = tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell") as! HeaderTableViewCell
-            headerCell.configureCell(withText: "Review")
+            headerCell.configureCell(withText: "Review", showEdit: true)
             return headerCell
         }
         
